@@ -1,24 +1,23 @@
-## Binance Smart Chain
+## Wyzth Chain
 
-The goal of Binance Smart Chain is to bring programmability and interoperability to Binance Chain. In order to embrace the existing popular community and advanced technology, it will bring huge benefits by staying compatible with all the existing smart contracts on Ethereum and Ethereum tooling. And to achieve that, the easiest solution is to develop based on go-ethereum fork, as we respect the great work of Ethereum very much.
+The goal of Wyzth Chain is to bring programmability. In order to embrace the existing popular community and advanced technology, it will bring huge benefits by staying compatible with all the existing smart contracts on Ethereum and Ethereum tooling. And to achieve that, the easiest solution is to develop based on go-ethereum fork, as we respect the great work of Ethereum very much.
 
-Binance Smart Chain starts its development based on go-ethereum fork. So you may see many toolings, binaries and also docs are based on Ethereum ones, such as the name “geth”.
+Wyzth Chain starts its development based on go-ethereum fork. So you may see many toolings, binaries and also docs are based on Ethereum ones, such as the name “geth”.
 
 [![API Reference](
 https://camo.githubusercontent.com/915b7be44ada53c290eb157634330494ebe3e30a/68747470733a2f2f676f646f632e6f72672f6769746875622e636f6d2f676f6c616e672f6764646f3f7374617475732e737667
 )](https://pkg.go.dev/github.com/ethereum/go-ethereum?tab=doc)
 [![Discord](https://img.shields.io/badge/discord-join%20chat-blue.svg)](https://discord.gg/5Z3C3SdxDw)
 
-But from that baseline of EVM compatible, Binance Smart Chain introduces  a system of 21 validators with Proof of Staked Authority (PoSA) consensus that can support short block time and lower fees. The most bonded validator candidates of staking will become validators and produce blocks. The double-sign detection and other slashing logic guarantee security, stability, and chain finality.
+But from that baseline of EVM compatible, Wyzth introduces  a system of 21 validators with Proof of Staked Authority (PoSA) consensus that can support short block time and lower fees. The most bonded validator candidates of staking will become validators and produce blocks. The double-sign detection and other slashing logic guarantee security, stability, and chain finality.
 
-Cross-chain transfer and other communication are possible due to native support of interoperability. Relayers and on-chain contracts are developed to support that. Binance DEX remains a liquid venue of the exchange of assets on both chains. This dual-chain architecture will be ideal for users to take advantage of the fast trading on one side and build their decentralized apps on the other side. **The Binance Smart Chain** will be:
+Cross-chain transfer and other communication are possible due to native support of interoperability. Relayers and on-chain contracts are developed to support that.**The Wyzth Chain** will be:
 
 - **A self-sovereign blockchain**: Provides security and safety with elected validators.
 - **EVM-compatible**: Supports all the existing Ethereum tooling along with faster finality and cheaper transaction fees.
 - **Interoperable**: Comes with efficient native dual chain communication; Optimized for scaling high-performance dApps that require fast and smooth user experience.
 - **Distributed with on-chain governance**: Proof of Staked Authority brings in decentralization and community participants. As the native token, WYZ will serve as both the gas of smart contract execution and tokens for staking.
 
-More details in [White Paper](http://binance.org/en#smartChain).
 
 ## Key features
 
@@ -30,7 +29,7 @@ Meanwhile, the PoA protocol is most criticized for being not as decentralized as
 
 Other blockchains, such as EOS and Cosmos both, introduce different types of Deputy Proof of Stake (DPoS) to allow the token holders to vote and elect the validator set. It increases the decentralization and favors community governance. 
 
-To combine DPoS and PoA for consensus, Binance Smart Chain implement a novel consensus engine called Parlia that:
+To combine DPoS and PoA for consensus, Wyzth Chain implement a novel consensus engine called Parlia that:
 
 1. Blocks are produced by a limited set of validators.
 2. Validators take turns to produce blocks in a PoA manner, similar to Ethereum's Clique consensus engine.
@@ -103,7 +102,7 @@ $ geth console
 This command will:
  * Start `geth` in fast sync mode (default, can be changed with the `--syncmode` flag),
    causing it to download more data in exchange for avoiding processing the entire history
-   of the Binance Smart Chain network, which is very CPU intensive.
+   of the Wyzth Chain network, which is very CPU intensive.
  * Start up `geth`'s built-in interactive [JavaScript console](https://geth.ethereum.org/docs/interface/javascript-console),
    (via the trailing `console` subcommand) through which you can interact using [`web3` methods](https://web3js.readthedocs.io/en/) 
    (note: the `web3` version bundled within `geth` is very old, and not up to date with official docs),
@@ -130,7 +129,7 @@ $ geth --your-favourite-flags dumpconfig
 ### Programmatically interfacing `geth` nodes
 
 As a developer, sooner rather than later you'll want to start interacting with `geth` and the
-Binance Smart Chain network via your own programs and not manually through the console. To aid
+Wyzth Chain network via your own programs and not manually through the console. To aid
 this, `geth` has built-in support for a JSON-RPC based APIs ([standard APIs](https://eth.wiki/json-rpc/API)
 and [`geth` specific APIs](https://geth.ethereum.org/docs/rpc/server)).
 These can be exposed via HTTP, WebSockets and IPC (UNIX sockets on UNIX based
